@@ -38,9 +38,7 @@ exports.default = function (tweetUrl, filePath) {
   .then(function () {
     return nightmare.boundingBox(tweetSelector);
   }).then(function (boundingBox) {
-    return nightmare.screenshot(filePath, boundingBox);
-  }).then(function () {
-    return nightmare.end();
+    return nightmare.screenshot(filePath, boundingBox).end();
   });
 };
 
