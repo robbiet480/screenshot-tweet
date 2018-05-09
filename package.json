@@ -5,8 +5,8 @@
   "author": "Luke Horvat",
   "license": "MIT",
   "repository": "lukehorvat/screenshot-tweet",
-  "main": "dist/index.js",
-  "bin": "dist/cli.js",
+  "main": "lib/index.js",
+  "bin": "lib/cli.js",
   "scripts": {
     "build": "node_modules/.bin/babel lib -d dist -q",
     "prebuild": "node_modules/.bin/rimraf dist",
